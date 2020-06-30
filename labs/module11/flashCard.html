@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+    <style>
+         #main {
+            position: relative;
+            top: 20px;
+            left: 50px;
+            width: 650px; 
+            height:650px; 
+            margin: 5px; 
+            color: rgb(2, 2, 2);
+            
+        }
+        #output {
+            position: absolute;
+            top: 20px;
+            left: 95px;
+            width: 450px; 
+            height:20px; 
+            margin: 5px; 
+            color: rgb(207, 191, 191);
+            background-color: black;
+            border: 3px solid #002403;
+            text-align: center;
+        }
+        
+        #btn1{
+            position: absolute;
+            width: 500px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 75px;
+            top: 75px;
+        }
+        #btn2{
+            position: absolute;
+            width: 500px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 75px;
+            top: 105px;
+            
+        }
+        #btn3{
+            position: absolute;
+            width: 500px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 75px;
+            top: 135px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id= "main">
+        <div id= "output"></div>
+        <button id="btn1" type="button" data-answer = "Squirrels" onclick= "questions()">Approximately 10-20% of U.S. power outages are caused by what?</button>
+        <button id="btn2" type="button" data-answer = "Yes" onclick= "questions()">In Switzerland is it illegal to own just one guinea pig?</button>
+        <button id="btn3" type="button" data-answer = "3,500 year old" onclick= "questions()">How old is the oldest "your mom" joke?</button>
+        
+   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"> </script>
+    <script src="js/app3.js"> </script>
+</body>
+</html>

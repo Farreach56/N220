@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+    <style>
+        #main {
+            width: 80%; 
+            background: rgb(0, 0, 0);
+            height:150px; 
+            margin: auto;
+             
+        }
+        #output{
+            width: 80%; 
+            height:40px; 
+            margin: auto;
+            color: solid #504f4f;
+            border: 3px solid #cacaca;
+            text-align: center;
+            font-size: 15px;
+            
+
+        }
+        .color{
+            position: absolute;
+            width: 74%;
+            height: 100px;
+	        color: #555;
+	        display: block;
+            padding: 15px;
+            left: 75px;
+            margin: auto;
+            
+            
+        }
+        #red{
+            position: absolute;
+            left: 5px;
+            top: 10px;
+            
+        }
+        #green{
+            position: absolute;
+            left: 5px;
+            top: 50px;
+           
+        }
+        #blue{
+            position: absolute;
+            left: 5px;
+            top: 90px;
+            
+        }
+        .btn1{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 95px;
+            top: -5px;
+        }
+        .btn2{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 175px;
+            top: -5px;
+            
+        }
+        .btn3{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 255px;
+            top: -5px;
+            
+        }
+        .btn4{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 95px;
+            top: 40px;
+        }
+        .btn5{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 175px;
+            top: 40px;
+            
+        }
+        .btn6{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 255px;
+            top: 40px;
+            
+        }
+        .btn7{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 95px;
+            top: 85px;
+        }
+        .btn8{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 175px;
+            top: 85px;
+            
+        }
+        .btn9{
+            position: absolute;
+            width: 50px;
+            height: 25px;
+	        color: #555;
+	        display: block;
+            margin: auto;
+            left: 255px;
+            top: 85px;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+
+    <div id= "main"></div>
+    <br/>
+    <div id= "output"></div>
+    <br/>
+    <div class="color"> 
+        <div id="red">Red: </div>
+        <button class="btn1" type="button" data-color = "red" data-id = 1 onclick= "changeColor()">+1</button>
+        <button class="btn2" type="button" data-color = "red" data-id = 5 onclick= "changeColor()">+5</button>
+        <button class="btn3" type="button" data-color = "red" data-id = 10 onclick= "changeColor()">+10</button>
+        
+        <div id="green">Green:  </div>
+        <button class="btn4" type="button" data-color = "green" data-id = 1 onclick= "changeColor()">+1</button>
+        <button class="btn5" type="button" data-color = "green" data-id = 5 onclick= "changeColor()">+5</button>
+        <button class="btn6" type="button" data-color = "green" data-id = 10 onclick= "changeColor()">+10</button>
+       
+        <div id="blue">Blue: </div>
+        <button class="btn7" type="button" data-color = "blue" data-id = 1 onclick= "changeColor()">+1</button>
+        <button class="btn8" type="button" data-color = "blue" data-id = 5 onclick= "changeColor()">+5</button>
+        <button class="btn9" type="button" data-color = "blue" data-id = 10 onclick= "changeColor()">+10</button>
+        
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"> </script>
+    <script src="js/app2.js"> </script>
+</body>
+</html>
